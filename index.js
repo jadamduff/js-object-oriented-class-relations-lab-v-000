@@ -22,13 +22,6 @@ class Driver {
       }.bind(this)
     );
   }
-  passengers() {
-    return this.trips.filter(
-      function(trip) {
-        return this.passenger;
-      }.bind(this)
-    );
-  }
 }
 
 class Passenger {
