@@ -23,11 +23,11 @@ class Driver {
     );
   }
   passengers() {
-      return this.trips().filter(
-        function(trip) {
-          return trip.passenger();
-        }
-      );
+    let passengerList = [];
+    for (const trip of this.trips()) {
+      passengerList.push(trip.passenger());
+    }
+    return passengerList;
   }
 }
 
