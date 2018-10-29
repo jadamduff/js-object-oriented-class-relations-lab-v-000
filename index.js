@@ -24,11 +24,12 @@ class Driver {
   }
   passengers() {
     console.log(
-      return this.trips().filter(
+      this.trips().filter(
       function(trip) {
         return trip.passenger();
       }
-    ););
+    );
+  );
   }
 }
 
