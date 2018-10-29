@@ -33,7 +33,7 @@ class Trip {
       this.driverId = driver.id;
     }
     if (passenger) {
-      this.passengerId = passeneger.id;
+      this.passengerId = passenger.id;
     }
     this.id = ++tripId;
 
