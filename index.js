@@ -45,7 +45,7 @@ class Passenger {
       }.bind(this)
     );
   }
-  passengers() {
+  drivers() {
     let driverList = [];
     for (const trip of this.trips()) {
       driverList.push(trip.driver());
