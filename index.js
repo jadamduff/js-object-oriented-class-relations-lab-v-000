@@ -38,6 +38,20 @@ class Passenger {
 
     store.passengers.push(this);
   }
+  trips() {
+    return store.trips.filter(
+      function(trip) {
+        return trip.passengerId === this.id;
+      }.bind(this)
+    );
+  }
+  passengers() {
+    let driverList = [];
+    for (const trip of this.trips()) {
+      driverList.push(trip.driver());
+    }
+    return driverList;
+  }
 }
 
 class Trip {
