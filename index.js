@@ -28,7 +28,7 @@ class Driver {
       function(trip) {
         return trip.passenger();
       }
-    );
+    ));
   );
   }
 }
