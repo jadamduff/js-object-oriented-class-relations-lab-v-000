@@ -37,6 +37,6 @@ class Trip {
     }
     this.id = ++tripId;
 
-    sore.trips.push(this);
+    store.trips.push(this);
   }
 }
