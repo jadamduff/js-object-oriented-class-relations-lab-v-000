@@ -8,7 +8,7 @@ let driverId = 0;
 let passengerId = 0;
 let tripId = 0;
 
-class Driver = {
+class Driver {
   constructor(name) {
     this.name = name;
     this.id = ++driverId;
@@ -18,7 +18,7 @@ class Driver = {
 
 }
 
-class Passenger = {
+class Passenger {
   constructor(name) {
     this.name = name;
     this.id = ++passengerId;
@@ -27,7 +27,7 @@ class Passenger = {
   }
 }
 
-class Trip = {
+class Trip {
   constructor(driver, passenger) {
     if (driver) {
       this.driverId = driver.id;
