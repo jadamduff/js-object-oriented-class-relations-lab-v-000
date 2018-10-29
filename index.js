@@ -24,7 +24,7 @@ class Driver {
   }
   passengers() {
     let passengerList = [];
-    for each (let trip in this.trips()) {
+    for (let trip in this.trips()) {
       passengerList.push(trip.passenger());
     }
     return passengerList;
