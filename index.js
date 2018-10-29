@@ -13,11 +13,24 @@ class Driver = {
     this.name = name;
     this.id = ++driverId;
   }
+  
 }
 
 class Passenger = {
   constructor(name) {
     this.name = name;
     this.id = ++passengerId;
+  }
+}
+
+class Trip = {
+  constructor(driver, passenger) {
+    if (driver) {
+      this.driverId = driver.id;
+    }
+    if (passenger) {
+      this.passengerId = passeneger.id;
+    }
+    this.id = ++tripId;
   }
 }
